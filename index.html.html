@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Codificador e decodificador de texto. Este site foi um challenge do programa ONE 
+        (Oracle Next Education) desenvolvido para aprimorar os conhecimentos em lógica de programação, HTML, CSS e JavaScript.">
+
+
+        <title>Codificador de texto</title>
+
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                <a href="https://www.alura.com.br/" title="Home">
+                    <img src="logo-alura.png" alt="Logo da Alura"
+                    width="120" height="48" id="logo">
+                </a>
+            </h1>     
+        </header>
+        <main class="main">
+            <section>
+                <textarea class="input-texto" cols="40" placeholder="Digite seu texto..."></textarea>
+
+                <div class="informacao">
+                    <ul class="mensagens-erro"></ul>
+                </div>
+
+                <div class="botoes">
+                    <button type="button"; class="btn-codificar">Codificar</button>
+                    <button type="button"; class="btn-decodificar">Decodificar</button>
+                </div>
+            </section>
+
+            <section class="container">
+                <textarea class="resultado"; cols="20"; placeholder=" "; readonly></textarea>
+                <button type="button"; class="btn-copiar">Copiar</button>
+            </section>
+        </main>
+
+        <footer>
+            <div class="rede">
+    
+             <a href="https://www.linkedin.com/in/teresa-morais-logistica" title="Teresa Morais" target="_blank">
+
+                <img src="logo-linkedin.png" alt="Logo do LinkedIn"
+                width="45" height="45" id="linkedin">
+            </a>
+            </div>
+            
+            <div class="credito">
+                <p>&#169; Desenvolvido por Teresa Morais - 2022</p>
+            </div>
+        </footer>
+
+        <script src="criptografar.js"></script>
+        <script src="validar.js"></script>
+        <script src="copiar.js"></script>
+    </body>
+</html>
